@@ -1,10 +1,10 @@
 version: "3"
 services:
-    web01:
-        image: redisdock:latest
+    web:
+        image: craigderington/flaskdock:latest
         ports:
             - "8000:8000"
     redis:
-        image: alexellis2/redis-arm:latest
+        image: redis:latest
         ports:
             - "6379:6379"  
